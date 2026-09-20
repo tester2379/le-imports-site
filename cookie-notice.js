@@ -32,7 +32,17 @@
   "use strict";
 
   var KEY = "dsm-cookie-choice";      // "accepted" | "rejected"
-  var POLICY = "/privacy.html";
+
+  /* Sites do not agree on the filename: some use /privacy.html, Zuleika and ISA
+   * Design use /privacy-policy.html. Hard-coding one of them pointed the banner
+   * at a 404 on three sites. Each page states its own via the script tag:
+   *     <script src="/cookie-notice.js" data-policy="/privacy-policy.html" defer>
+   * Falling back to /privacy.html keeps older pages working. */
+  var POLICY = (function () {
+    var tag = document.currentScript ||
+              document.querySelector('script[src*="cookie-notice.js"]');
+    return (tag && tag.getAttribute("data-policy")) || "/privacy.html";
+  })();
 
   function choice() {
     try { return localStorage.getItem(KEY); } catch (e) { return null; }

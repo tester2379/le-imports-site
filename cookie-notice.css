@@ -1,0 +1,78 @@
+/* EU cookie / privacy notice — DSM Communications, 2026-09-20.
+ *
+ * Deliberately neutral so it sits on any of the client sites without being
+ * restyled per site: dark bar, system font stack (it must NOT depend on the
+ * Google font it is asking permission to load), fixed to the bottom.
+ *
+ * The two buttons are the same size and weight on purpose. Making "Accept"
+ * prominent and "Refuse" a faint link is the pattern regulators have gone
+ * after, and it makes the consent invalid - so Accept is filled and Refuse is
+ * outlined, but both are full buttons with the same hit area.
+ */
+.dsm-cookie {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483000;            /* above site headers and chat bubbles */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  background: #14181b;
+  color: #eef1f2;
+  font: 400 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  box-shadow: 0 -2px 18px rgba(0, 0, 0, .28);
+}
+
+.dsm-cookie-text {
+  margin: 0;
+  flex: 1 1 340px;
+  max-width: 78ch;
+}
+
+.dsm-cookie-text a {
+  color: #8fd3dc;
+  text-decoration: underline;
+}
+
+.dsm-cookie-btns {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.dsm-cookie-btn {
+  font: 600 14px/1 inherit;
+  min-height: 42px;
+  padding: 0 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.dsm-cookie-yes {
+  background: #2f9e8f;
+  color: #06231f;
+  border-color: #2f9e8f;
+}
+
+.dsm-cookie-no {
+  background: transparent;
+  color: #eef1f2;
+  border-color: #6b7679;
+}
+
+.dsm-cookie-btn:focus-visible {
+  outline: 2px solid #8fd3dc;
+  outline-offset: 2px;
+}
+
+@media (max-width: 560px) {
+  .dsm-cookie { padding: 14px 16px; }
+  .dsm-cookie-btns { width: 100%; }
+  .dsm-cookie-btn { flex: 1 1 0; }     /* equal halves, neither one easier to hit */
+}

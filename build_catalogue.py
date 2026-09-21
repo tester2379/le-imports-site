@@ -75,7 +75,8 @@ def header(active, up=""):
         'across Malta</div>'
         '<header class="site-header"><div class="container nav-row">'
         f'<a class="brand" href="{up}index.html" aria-label="L&E Imports home">'
-        '<span class="brand-mark">L&amp;E</span><span class="brand-name">IMPORTS</span></a>'
+        f'<img class="site-logo" src="{up}assets/logo.png" alt="L&E Imports" '
+        'width="600" height="366"></a>'
         f'<nav class="nav">{nav}</nav>'
         f'<a class="btn primary header-quote" href="{WA}" target="_blank" rel="noopener">'
         'Request a Quote <span>↗</span></a>'
@@ -89,8 +90,9 @@ def header(active, up=""):
 def footer(up=""):
     return (
         '<footer class="footer"><div class="container footer-grid"><div>'
-        f'<a class="brand footer-brand" href="{up}index.html"><span class="brand-mark">L&amp;E</span>'
-        '<span class="brand-name">IMPORTS</span></a>'
+        f'<a class="brand footer-brand" href="{up}index.html" aria-label="L&E Imports home">'
+        f'<img class="site-logo" src="{up}assets/logo.png" alt="L&E Imports" '
+        'width="600" height="366"></a>'
         '<p>Imported food, confectionery, snacks and beverages, distributed to '
         'supermarkets, retailers and commercial customers across Malta.</p></div>'
         f'<div><h3>Explore</h3><a href="{up}index.html">Home</a><a href="{up}about.html">About Us</a>'
@@ -128,8 +130,7 @@ def page(title, active, body, hero_title=None, hero_text=None, desc=None, up="")
         f'<title>{e(title)} · L&amp;E Imports</title>'
         # the tab icon: without these every page falls back to a 404 on
         # /favicon.ico, which on GitHub Pages is not even under this site
-        f'<link rel="icon" href="{up}favicon.svg" type="image/svg+xml">'
-        f'<link rel="alternate icon" href="{up}favicon.png">'
+        f'<link rel="icon" href="{up}favicon.png" type="image/png">'
         f'<link rel="stylesheet" href="{up}style.css">'
         f'<link rel="stylesheet" href="{up}cookie-notice.css">'
         # Google Fonts held back until the visitor accepts. It used to be an

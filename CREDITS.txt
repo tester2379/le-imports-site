@@ -1,5 +1,36 @@
-Prototype asset note
+Asset note
+==========
 
-Photography uses Unsplash prototype imagery; replace with L&E Imports-approved company and product photography before production. Brand names are presented as text placeholders because no official logo files were supplied in the plan.
+Brand logos (assets/logos/) and product photography (assets/products/)
+---------------------------------------------------------------------
+Supplied by L&E Imports: 15 brand logos and 60 product images, taken from the
+reference documents listed below. Every product's name, the brand it belongs to
+and the image that goes with it come from those documents; nothing is inferred.
 
-Reference: L&E_Imports_Website_Plan.docx
+One exception worth knowing about: the supplied MIKE AND IKE logo was a
+stock-site file with the transparency checkerboard (and that site's watermark)
+baked into the pixels, so it rendered as a grey grid on a white card. Only that
+background has been made transparent - the artwork itself is untouched. It is
+still worth asking L&E for the brand's proper logo file.
+
+Categories are the one judgement call on this site: they are assigned per BRAND
+from the category list in the plan, because the documents do not carry a
+category per product.
+
+Site photography (hero and section images)
+------------------------------------------
+Unsplash prototype imagery; replace with L&E Imports-approved company
+photography before production.
+
+Typography
+----------
+Inter and Montserrat are loaded from Google Fonts ONLY after the visitor accepts
+the notice (see cookie-notice.js and the data-consent-href link in each page).
+The site is designed to read correctly on the system fallback if they refuse, so
+never turn that link back into a plain stylesheet href or a CSS @import.
+
+References
+----------
+L&E_Imports_Website_Plan.docx
+L&E Imports Product images by brand
+L&E Imports brand logos

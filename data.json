@@ -1,0 +1,691 @@
+{
+ "brands": [
+  {
+   "id": "B01",
+   "name": "NESCAFÉ",
+   "slug": "nescaf",
+   "logo": "assets/logos/nescaf.png",
+   "category": "Juices & Beverages",
+   "agency": false,
+   "count": 1
+  },
+  {
+   "id": "B02",
+   "name": "Reese's",
+   "slug": "reeses",
+   "logo": "assets/logos/reeses.jpg",
+   "category": "Chocolate",
+   "agency": false,
+   "count": 1
+  },
+  {
+   "id": "B03",
+   "name": "M&M'S",
+   "slug": "m-and-ms",
+   "logo": "assets/logos/m-and-ms.png",
+   "category": "Chocolate",
+   "agency": false,
+   "count": 1
+  },
+  {
+   "id": "B04",
+   "name": "Candy Paradise",
+   "slug": "candy-paradise",
+   "logo": "assets/logos/candy-paradise.png",
+   "category": "Confectionery",
+   "agency": false,
+   "count": 1
+  },
+  {
+   "id": "B05",
+   "name": "MIKE AND IKE",
+   "slug": "mike-and-ike",
+   "logo": "assets/logos/mike-and-ike.png",
+   "category": "Confectionery",
+   "agency": false,
+   "count": 6
+  },
+  {
+   "id": "B06",
+   "name": "OYLUM",
+   "slug": "oylum",
+   "logo": "assets/logos/oylum.jpg",
+   "category": "Biscuits & Cakes",
+   "agency": true,
+   "count": 9
+  },
+  {
+   "id": "B07",
+   "name": "Vitaminka",
+   "slug": "vitaminka",
+   "logo": "assets/logos/vitaminka.png",
+   "category": "Snacks",
+   "agency": true,
+   "count": 26
+  },
+  {
+   "id": "B08",
+   "name": "Balconi",
+   "slug": "balconi",
+   "logo": "assets/logos/balconi.png",
+   "category": "Desserts & Puddings",
+   "agency": false,
+   "count": 3
+  },
+  {
+   "id": "B09",
+   "name": "Pai",
+   "slug": "pai",
+   "logo": "assets/logos/pai.png",
+   "category": "Snacks",
+   "agency": false,
+   "count": 2
+  },
+  {
+   "id": "B10",
+   "name": "Relax",
+   "slug": "relax",
+   "logo": "assets/logos/relax.png",
+   "category": "Juices & Beverages",
+   "agency": false,
+   "count": 3
+  },
+  {
+   "id": "B11",
+   "name": "Geber",
+   "slug": "geber",
+   "logo": "assets/logos/geber.jpg",
+   "category": "Food & Grocery",
+   "agency": false,
+   "count": 1
+  },
+  {
+   "id": "B12",
+   "name": "Natural 100%",
+   "slug": "natural-100",
+   "logo": "assets/logos/natural-100.png",
+   "category": "Juices & Beverages",
+   "agency": false,
+   "count": 2
+  },
+  {
+   "id": "B13",
+   "name": "Red Bull",
+   "slug": "red-bull",
+   "logo": "assets/logos/red-bull.png",
+   "category": "Energy Drinks",
+   "agency": false,
+   "count": 2
+  },
+  {
+   "id": "B14",
+   "name": "Warheads",
+   "slug": "warheads",
+   "logo": "assets/logos/warheads.jpg",
+   "category": "Confectionery",
+   "agency": false,
+   "count": 1
+  },
+  {
+   "id": "B15",
+   "name": "Hershey's",
+   "slug": "hersheys",
+   "logo": "assets/logos/hersheys.png",
+   "category": "Chocolate",
+   "agency": false,
+   "count": 1
+  }
+ ],
+ "products": [
+  {
+   "id": "B01-I001",
+   "name": "Limited Edition KitKat Latte",
+   "brand": "NESCAFÉ",
+   "category": "Juices & Beverages",
+   "image": "B01_I001_NESCAFE_Limited_Edition_KitKat_Latte.png",
+   "slug": "limited-edition-kitkat-latte-i001",
+   "file": "assets/products/nescaf-limited-edition-kitkat-latte-i001.png"
+  },
+  {
+   "id": "B02-I002",
+   "name": "OREO Peanut Butter Cups",
+   "brand": "Reese's",
+   "category": "Chocolate",
+   "image": "B02_I002_Reeses_OREO_Peanut_Butter_Cups.png",
+   "slug": "oreo-peanut-butter-cups-i002",
+   "file": "assets/products/reeses-oreo-peanut-butter-cups-i002.png"
+  },
+  {
+   "id": "B03-I003",
+   "name": "Cookie Dough",
+   "brand": "M&M'S",
+   "category": "Chocolate",
+   "image": "B03_I003_MandMS_Cookie_Dough.png",
+   "slug": "cookie-dough-i003",
+   "file": "assets/products/m-and-ms-cookie-dough-i003.png"
+  },
+  {
+   "id": "B04-I004",
+   "name": "Vortex Jelly Pops",
+   "brand": "Candy Paradise",
+   "category": "Confectionery",
+   "image": "B04_I004_Vortex_Jelly_Pops.png",
+   "slug": "vortex-jelly-pops-i004",
+   "file": "assets/products/candy-paradise-vortex-jelly-pops-i004.png"
+  },
+  {
+   "id": "B05-I005",
+   "name": "Mega Mix Peg Bag Mega Mix",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "B05_I005_MIKE_AND_IKE_Mega_Mix_Peg_Bag_Mega_Mix.png",
+   "slug": "mega-mix-peg-bag-mega-mix-i005",
+   "file": "assets/products/mike-and-ike-mega-mix-peg-bag-mega-mix-i005.png"
+  },
+  {
+   "id": "B05-I006",
+   "name": "Mega Mix Peg Bag Sour",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "B05_I006_MIKE_AND_IKE_Mega_Mix_Peg_Bag_Sour.png",
+   "slug": "mega-mix-peg-bag-sour-i006",
+   "file": "assets/products/mike-and-ike-mega-mix-peg-bag-sour-i006.png"
+  },
+  {
+   "id": "B05-I007",
+   "name": "Thrill Ride Mix",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "B05_I007_MIKE_AND_IKE_Thrill_Ride_Mix.png",
+   "slug": "thrill-ride-mix-i007",
+   "file": "assets/products/mike-and-ike-thrill-ride-mix-i007.png"
+  },
+  {
+   "id": "B05-I008",
+   "name": "Ice Cream Truck Mix",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "B05_I008_MIKE_AND_IKE_Ice_Cream_Truck_Mix.png",
+   "slug": "ice-cream-truck-mix-i008",
+   "file": "assets/products/mike-and-ike-ice-cream-truck-mix-i008.png"
+  },
+  {
+   "id": "B05-I009",
+   "name": "120g Range",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "B05_I009_MIKE_AND_IKE_120g_Range.png",
+   "slug": "120g-range-i009",
+   "file": "assets/products/mike-and-ike-120g-range-i009.png"
+  },
+  {
+   "id": "B05-I010",
+   "name": "22g Range",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "B05_I010_MIKE_AND_IKE_22g_Range.png",
+   "slug": "22g-range-i010",
+   "file": "assets/products/mike-and-ike-22g-range-i010.png"
+  },
+  {
+   "id": "B06-I011",
+   "name": "Tiger Cocoa Coated Wafers Range",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I011_OYLUM_Tiger_Cocoa_Coated_Wafers_Range.png",
+   "slug": "tiger-cocoa-coated-wafers-range-i011",
+   "file": "assets/products/oylum-tiger-cocoa-coated-wafers-range-i011.png"
+  },
+  {
+   "id": "B06-I012",
+   "name": "Snakkers Choco",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I012_OYLUM_Snakkers_Choco.png",
+   "slug": "snakkers-choco-i012",
+   "file": "assets/products/oylum-snakkers-choco-i012.png"
+  },
+  {
+   "id": "B06-I013",
+   "name": "Oyluppy Variant 1",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I013_OYLUM_Oyluppy_Variant_1.png",
+   "slug": "oyluppy-variant-1-i013",
+   "file": "assets/products/oylum-oyluppy-variant-1-i013.png"
+  },
+  {
+   "id": "B06-I014",
+   "name": "Oyluppy Variant 2",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I014_OYLUM_Oyluppy_Variant_2.png",
+   "slug": "oyluppy-variant-2-i014",
+   "file": "assets/products/oylum-oyluppy-variant-2-i014.png"
+  },
+  {
+   "id": "B06-I015",
+   "name": "Jaguar Marshmallow Variant 1",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I015_OYLUM_Jaguar_Marshmallow_Variant_1.png",
+   "slug": "jaguar-marshmallow-variant-1-i015",
+   "file": "assets/products/oylum-jaguar-marshmallow-variant-1-i015.png"
+  },
+  {
+   "id": "B06-I016",
+   "name": "Jaguar Marshmallow Variant 2",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I016_OYLUM_Jaguar_Marshmallow_Variant_2.png",
+   "slug": "jaguar-marshmallow-variant-2-i016",
+   "file": "assets/products/oylum-jaguar-marshmallow-variant-2-i016.png"
+  },
+  {
+   "id": "B06-I017",
+   "name": "Jaguar Marshmallow Variant 3",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I017_OYLUM_Jaguar_Marshmallow_Variant_3.png",
+   "slug": "jaguar-marshmallow-variant-3-i017",
+   "file": "assets/products/oylum-jaguar-marshmallow-variant-3-i017.png"
+  },
+  {
+   "id": "B06-I018",
+   "name": "Jaguar Cocoa Coated Wafers Hazelnut Cream",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I018_OYLUM_Jaguar_Cocoa_Coated_Wafers_Hazelnut_Cream.png",
+   "slug": "jaguar-cocoa-coated-wafers-hazelnut-cream-i018",
+   "file": "assets/products/oylum-jaguar-cocoa-coated-wafers-hazelnut-cream-i018.png"
+  },
+  {
+   "id": "B06-I019",
+   "name": "Jaguar Cocoa Coated Wafers Vanilla Cream",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "B06_I019_OYLUM_Jaguar_Cocoa_Coated_Wafers_Vanilla_Cream.png",
+   "slug": "jaguar-cocoa-coated-wafers-vanilla-cream-i019",
+   "file": "assets/products/oylum-jaguar-cocoa-coated-wafers-vanilla-cream-i019.png"
+  },
+  {
+   "id": "B07-I020",
+   "name": "Choco Stobi Variant 1",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I020_Vitaminka_Choco_Stobi_Variant_1.png",
+   "slug": "choco-stobi-variant-1-i020",
+   "file": "assets/products/vitaminka-choco-stobi-variant-1-i020.png"
+  },
+  {
+   "id": "B07-I021",
+   "name": "Choco Stobi Variant 2",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I021_Vitaminka_Choco_Stobi_Variant_2.png",
+   "slug": "choco-stobi-variant-2-i021",
+   "file": "assets/products/vitaminka-choco-stobi-variant-2-i021.png"
+  },
+  {
+   "id": "B07-I022",
+   "name": "Choco Stobi Variant 3",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I022_Vitaminka_Choco_Stobi_Variant_3.png",
+   "slug": "choco-stobi-variant-3-i022",
+   "file": "assets/products/vitaminka-choco-stobi-variant-3-i022.png"
+  },
+  {
+   "id": "B07-I023",
+   "name": "Choco Stobi Variant 4",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I023_Vitaminka_Choco_Stobi_Variant_4.png",
+   "slug": "choco-stobi-variant-4-i023",
+   "file": "assets/products/vitaminka-choco-stobi-variant-4-i023.png"
+  },
+  {
+   "id": "B07-I024",
+   "name": "Choco Stobi Pistachio",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I024_Vitaminka_Choco_Stobi_Pistachio.png",
+   "slug": "choco-stobi-pistachio-i024",
+   "file": "assets/products/vitaminka-choco-stobi-pistachio-i024.png"
+  },
+  {
+   "id": "B07-I025",
+   "name": "Happy Milk Chocolate with Smarties",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I025_Vitaminka_Happy_Milk_Chocolate_with_Smarties.png",
+   "slug": "happy-milk-chocolate-with-smarties-i025",
+   "file": "assets/products/vitaminka-happy-milk-chocolate-with-smarties-i025.png"
+  },
+  {
+   "id": "B07-I026",
+   "name": "Stobi Flips with Peanuts",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I026_Vitaminka_Stobi_Flips_with_Peanuts.png",
+   "slug": "stobi-flips-with-peanuts-i026",
+   "file": "assets/products/vitaminka-stobi-flips-with-peanuts-i026.png"
+  },
+  {
+   "id": "B07-I027",
+   "name": "Stobi Flips Say Cheese",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I027_Vitaminka_Stobi_Flips_Say_Cheese.png",
+   "slug": "stobi-flips-say-cheese-i027",
+   "file": "assets/products/vitaminka-stobi-flips-say-cheese-i027.png"
+  },
+  {
+   "id": "B07-I043",
+   "name": "Stobi Pizza Margherita",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I043_Vitaminka_Stobi_Pizza_Margherita.png",
+   "slug": "stobi-pizza-margherita-i043",
+   "file": "assets/products/vitaminka-stobi-pizza-margherita-i043.png"
+  },
+  {
+   "id": "B07-I044",
+   "name": "Stobi Magnus Original",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I044_Vitaminka_Stobi_Magnus_Original.png",
+   "slug": "stobi-magnus-original-i044",
+   "file": "assets/products/vitaminka-stobi-magnus-original-i044.png"
+  },
+  {
+   "id": "B07-I045",
+   "name": "Stobi Magnus Extra Hot",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I045_Vitaminka_Stobi_Magnus_Extra_Hot.png",
+   "slug": "stobi-magnus-extra-hot-i045",
+   "file": "assets/products/vitaminka-stobi-magnus-extra-hot-i045.png"
+  },
+  {
+   "id": "B07-I046",
+   "name": "Stobi Magnus Hot and Spicy",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I046_Vitaminka_Stobi_Magnus_Hot_and_Spicy.png",
+   "slug": "stobi-magnus-hot-and-spicy-i046",
+   "file": "assets/products/vitaminka-stobi-magnus-hot-and-spicy-i046.png"
+  },
+  {
+   "id": "B07-I047",
+   "name": "Fit N Crunchy Garlic and Olive",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I047_Vitaminka_Fit_N_Crunchy_Garlic_and_Olive.png",
+   "slug": "fit-n-crunchy-garlic-and-olive-i047",
+   "file": "assets/products/vitaminka-fit-n-crunchy-garlic-and-olive-i047.png"
+  },
+  {
+   "id": "B07-I048",
+   "name": "Fit N Crunchy Cheddar Cheese",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I048_Vitaminka_Fit_N_Crunchy_Cheddar_Cheese.png",
+   "slug": "fit-n-crunchy-cheddar-cheese-i048",
+   "file": "assets/products/vitaminka-fit-n-crunchy-cheddar-cheese-i048.png"
+  },
+  {
+   "id": "B07-I049",
+   "name": "La Soup Mushroom Cream Soup",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I049_Vitaminka_La_Soup_Mushroom_Cream_Soup.png",
+   "slug": "la-soup-mushroom-cream-soup-i049",
+   "file": "assets/products/vitaminka-la-soup-mushroom-cream-soup-i049.png"
+  },
+  {
+   "id": "B07-I050",
+   "name": "Frutti Soft Cake Banana",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I050_Vitaminka_Frutti_Soft_Cake_Banana.png",
+   "slug": "frutti-soft-cake-banana-i050",
+   "file": "assets/products/vitaminka-frutti-soft-cake-banana-i050.png"
+  },
+  {
+   "id": "B07-I051",
+   "name": "Frutti Soft Cake Sour Cherry",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I051_Vitaminka_Frutti_Soft_Cake_Sour_Cherry.png",
+   "slug": "frutti-soft-cake-sour-cherry-i051",
+   "file": "assets/products/vitaminka-frutti-soft-cake-sour-cherry-i051.png"
+  },
+  {
+   "id": "B07-I052",
+   "name": "Frutti Soft Cake Peach",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I052_Vitaminka_Frutti_Soft_Cake_Peach.png",
+   "slug": "frutti-soft-cake-peach-i052",
+   "file": "assets/products/vitaminka-frutti-soft-cake-peach-i052.png"
+  },
+  {
+   "id": "B07-I053",
+   "name": "Frutti Soft Cake Orange",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I053_Vitaminka_Frutti_Soft_Cake_Orange.png",
+   "slug": "frutti-soft-cake-orange-i053",
+   "file": "assets/products/vitaminka-frutti-soft-cake-orange-i053.png"
+  },
+  {
+   "id": "B07-I054",
+   "name": "Cookies Tea Biscuits Variant 1",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I054_Vitaminka_Cookies_Tea_Biscuits_Variant_1.png",
+   "slug": "cookies-tea-biscuits-variant-1-i054",
+   "file": "assets/products/vitaminka-cookies-tea-biscuits-variant-1-i054.png"
+  },
+  {
+   "id": "B07-I055",
+   "name": "Cookies Tea Biscuits Variant 2",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I055_Vitaminka_Cookies_Tea_Biscuits_Variant_2.png",
+   "slug": "cookies-tea-biscuits-variant-2-i055",
+   "file": "assets/products/vitaminka-cookies-tea-biscuits-variant-2-i055.png"
+  },
+  {
+   "id": "B07-I056",
+   "name": "Pastela Pudding Lemon",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I056_Vitaminka_Pastela_Pudding_Lemon.png",
+   "slug": "pastela-pudding-lemon-i056",
+   "file": "assets/products/vitaminka-pastela-pudding-lemon-i056.png"
+  },
+  {
+   "id": "B07-I057",
+   "name": "Pastela Pudding Vanilla",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I057_Vitaminka_Pastela_Pudding_Vanilla.png",
+   "slug": "pastela-pudding-vanilla-i057",
+   "file": "assets/products/vitaminka-pastela-pudding-vanilla-i057.png"
+  },
+  {
+   "id": "B07-I058",
+   "name": "Pastela Pudding Strawberry",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I058_Vitaminka_Pastela_Pudding_Strawberry.png",
+   "slug": "pastela-pudding-strawberry-i058",
+   "file": "assets/products/vitaminka-pastela-pudding-strawberry-i058.png"
+  },
+  {
+   "id": "B07-I059",
+   "name": "Pastela Pudding Chocolate",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I059_Vitaminka_Pastela_Pudding_Chocolate.png",
+   "slug": "pastela-pudding-chocolate-i059",
+   "file": "assets/products/vitaminka-pastela-pudding-chocolate-i059.png"
+  },
+  {
+   "id": "B07-I060",
+   "name": "Cevitana Instant Vitamin Drink",
+   "brand": "Vitaminka",
+   "category": "Snacks",
+   "image": "B07_I060_Vitaminka_Cevitana_Instant_Vitamin_Drink.png",
+   "slug": "cevitana-instant-vitamin-drink-i060",
+   "file": "assets/products/vitaminka-cevitana-instant-vitamin-drink-i060.png"
+  },
+  {
+   "id": "B08-I028",
+   "name": "Tiramisu",
+   "brand": "Balconi",
+   "category": "Desserts & Puddings",
+   "image": "B08_I028_Balconi_Tiramisu.png",
+   "slug": "tiramisu-i028",
+   "file": "assets/products/balconi-tiramisu-i028.png"
+  },
+  {
+   "id": "B08-I029",
+   "name": "Choco Dessert",
+   "brand": "Balconi",
+   "category": "Desserts & Puddings",
+   "image": "B08_I029_Balconi_Choco_Dessert.png",
+   "slug": "choco-dessert-i029",
+   "file": "assets/products/balconi-choco-dessert-i029.png"
+  },
+  {
+   "id": "B08-I030",
+   "name": "Vienesse",
+   "brand": "Balconi",
+   "category": "Desserts & Puddings",
+   "image": "B08_I030_Balconi_Vienesse.png",
+   "slug": "vienesse-i030",
+   "file": "assets/products/balconi-vienesse-i030.png"
+  },
+  {
+   "id": "B09-I031",
+   "name": "Patatine 300g",
+   "brand": "Pai",
+   "category": "Snacks",
+   "image": "B09_I031_Pai_Patatine_300g.png",
+   "slug": "patatine-300g-i031",
+   "file": "assets/products/pai-patatine-300g-i031.png"
+  },
+  {
+   "id": "B09-I032",
+   "name": "Patatine 200g",
+   "brand": "Pai",
+   "category": "Snacks",
+   "image": "B09_I032_Pai_Patatine_200g.png",
+   "slug": "patatine-200g-i032",
+   "file": "assets/products/pai-patatine-200g-i032.png"
+  },
+  {
+   "id": "B10-I033",
+   "name": "Juice 500ml Range",
+   "brand": "Relax",
+   "category": "Juices & Beverages",
+   "image": "B10_I033_Relax_Juice_500ml_Range.png",
+   "slug": "juice-500ml-range-i033",
+   "file": "assets/products/relax-juice-500ml-range-i033.png"
+  },
+  {
+   "id": "B10-I034",
+   "name": "Juice 1 5L Range",
+   "brand": "Relax",
+   "category": "Juices & Beverages",
+   "image": "B10_I034_Relax_Juice_1_5L_Range.png",
+   "slug": "juice-1-5l-range-i034",
+   "file": "assets/products/relax-juice-1-5l-range-i034.png"
+  },
+  {
+   "id": "B10-I035",
+   "name": "Ice Tea Range",
+   "brand": "Relax",
+   "category": "Juices & Beverages",
+   "image": "B10_I035_Relax_Ice_Tea_Range.png",
+   "slug": "ice-tea-range-i035",
+   "file": "assets/products/relax-ice-tea-range-i035.png"
+  },
+  {
+   "id": "B11-I036",
+   "name": "Zucchero 1000g",
+   "brand": "Geber",
+   "category": "Food & Grocery",
+   "image": "B11_I036_Geber_Zucchero_1000g.png",
+   "slug": "zucchero-1000g-i036",
+   "file": "assets/products/geber-zucchero-1000g-i036.png"
+  },
+  {
+   "id": "B12-I037",
+   "name": "100 Juice Range Composite",
+   "brand": "Natural 100%",
+   "category": "Juices & Beverages",
+   "image": "B12_I037_Natural_100_Juice_Range_Composite.png",
+   "slug": "100-juice-range-composite-i037",
+   "file": "assets/products/natural-100-100-juice-range-composite-i037.png"
+  },
+  {
+   "id": "B12-I038",
+   "name": "100 Juice Apple",
+   "brand": "Natural 100%",
+   "category": "Juices & Beverages",
+   "image": "B12_I038_Natural_100_Juice_Apple.png",
+   "slug": "100-juice-apple-i038",
+   "file": "assets/products/natural-100-100-juice-apple-i038.png"
+  },
+  {
+   "id": "B13-I039",
+   "name": "Plus Energy Drink",
+   "brand": "Red Bull",
+   "category": "Energy Drinks",
+   "image": "B13_I039_Red_Bull_Plus_Energy_Drink.png",
+   "slug": "plus-energy-drink-i039",
+   "file": "assets/products/red-bull-plus-energy-drink-i039.png"
+  },
+  {
+   "id": "B13-I040",
+   "name": "High Vitamin Zero Sugar",
+   "brand": "Red Bull",
+   "category": "Energy Drinks",
+   "image": "B13_I040_Red_Bull_High_Vitamin_Zero_Sugar.png",
+   "slug": "high-vitamin-zero-sugar-i040",
+   "file": "assets/products/red-bull-high-vitamin-zero-sugar-i040.png"
+  },
+  {
+   "id": "B14-I041",
+   "name": "Sour and Chewy Candy Range",
+   "brand": "Warheads",
+   "category": "Confectionery",
+   "image": "B14_I041_Warheads_Sour_and_Chewy_Candy_Range.png",
+   "slug": "sour-and-chewy-candy-range-i041",
+   "file": "assets/products/warheads-sour-and-chewy-candy-range-i041.png"
+  },
+  {
+   "id": "B15-I042",
+   "name": "Milk Duds",
+   "brand": "Hershey's",
+   "category": "Chocolate",
+   "image": "B15_I042_Hersheys_Milk_Duds.png",
+   "slug": "milk-duds-i042",
+   "file": "assets/products/hersheys-milk-duds-i042.png"
+  }
+ ],
+ "categories": [
+  "Biscuits & Cakes",
+  "Chocolate",
+  "Confectionery",
+  "Desserts & Puddings",
+  "Energy Drinks",
+  "Food & Grocery",
+  "Juices & Beverages",
+  "Snacks"
+ ]
+}

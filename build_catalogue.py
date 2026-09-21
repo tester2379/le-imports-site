@@ -126,6 +126,10 @@ def page(title, active, body, hero_title=None, hero_text=None, desc=None, up="")
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         f'<meta name="description" content="{e(description)}">'
         f'<title>{e(title)} · L&amp;E Imports</title>'
+        # the tab icon: without these every page falls back to a 404 on
+        # /favicon.ico, which on GitHub Pages is not even under this site
+        f'<link rel="icon" href="{up}favicon.svg" type="image/svg+xml">'
+        f'<link rel="alternate icon" href="{up}favicon.png">'
         f'<link rel="stylesheet" href="{up}style.css">'
         f'<link rel="stylesheet" href="{up}cookie-notice.css">'
         # Google Fonts held back until the visitor accepts. It used to be an

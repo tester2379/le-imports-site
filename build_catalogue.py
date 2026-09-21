@@ -41,10 +41,14 @@ HERO = ("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
 WAREHOUSE = ("https://images.unsplash.com/photo-1553413077-190dd305871c"
              "?auto=format&fit=crop&w=1200&q=85")
 
-# The web font, lifted out of style.css so consent can gate it. Read from the
-# file the extraction wrote, so the exact families and weights the design uses
-# are preserved rather than retyped.
-FONT_CSS = (ROOT / "FONT_URL.txt").read_text(encoding="utf-8").strip()
+# The web font, lifted out of style.css so the cookie notice can gate it: it is
+# emitted as data-consent-href, and cookie-notice.js only turns that into a real
+# stylesheet link once the visitor accepts. Families and weights are exactly the
+# ones the original design loaded. Never put this back in style.css as an
+# @import - that loads it for everyone the moment the stylesheet parses, which
+# is what made the notice's "Refuse" meaningless before.
+FONT_CSS = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700"
+            "&family=Montserrat:wght@500;600;700;800&display=swap")
 
 e = html.escape
 
@@ -291,10 +295,54 @@ def build_products():
         encoding="utf-8")
 
 
+def families(items, brand):
+    """Group a brand's products by the leading words their names share.
+
+    Nothing here is invented: a family is only recognised when two or more of
+    the supplied names begin with the same two-to-four words. Groups keep the
+    document's own order, and whatever does not join a family ends up in one
+    final group so every product is still on the page.
+    """
+    remaining, groups = list(items), []
+    while remaining:
+        counts = {}
+        for p in remaining:
+            t = p["name"].split()
+            for n in range(2, min(len(t), 4) + 1):
+                key = tuple(t[:n])
+                counts[key] = counts.get(key, 0) + 1
+        # biggest family first, and on a tie the more specific (longer) name
+        cands = sorted(((c, len(k), k) for k, c in counts.items() if c >= 2), reverse=True)
+        if not cands:
+            break
+        key = cands[0][2]
+        n = len(key)
+        picked = [p for p in remaining if tuple(p["name"].split()[:n]) == key]
+        # "Variant" is the image document's placeholder word, not part of a
+        # family name: the family is Oyluppy, not "Oyluppy Variant".
+        label = " ".join(key)
+        if label.endswith(" Variant"):
+            label = label[:-len(" Variant")]
+        groups.append((label, picked))
+        remaining = [p for p in remaining if p not in picked]
+    if len(groups) < 2 or len(items) < 6:
+        return [("", items)]
+    groups.sort(key=lambda g: items.index(g[1][0]))       # back into document order
+    if remaining:
+        groups.append((f"More from {brand}", remaining))
+    return groups
+
+
 def build_brand_pages():
     for b in BRANDS:
         items = products_of(b["name"])
-        cards = "".join(product_card(p, "../../") for p in items)
+        groups = families(items, b["name"])
+        cards = ""
+        for label, members in groups:
+            if label:
+                cards += f'<h3 class="family-head">{e(label)}</h3>'
+            cards += ('<div class="product-grid">'
+                      + "".join(product_card(p, "../../") for p in members) + '</div>')
         agency_note = ""
         if b["agency"]:
             agency_note = ('<p class="agency-flag">Official Agency &amp; Direct Distribution '
@@ -311,7 +359,7 @@ def build_brand_pages():
             '<section class="section offwhite"><div class="container">'
             '<div class="section-intro left"><p class="eyebrow purple">PRODUCTS</p>'
             f'<h2>The {e(b["name"])} range</h2></div>'
-            f'<div class="product-grid">{cards}</div>'
+            f'{cards}'
             '<p class="center-cta"><a class="btn secondary" href="../../brands.html">'
             '← All brands</a></p></div></section>')
         out = ROOT / "brands" / b["slug"]

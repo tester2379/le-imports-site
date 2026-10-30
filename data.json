@@ -43,7 +43,7 @@
    "logo": "assets/logos/mike-and-ike.png",
    "category": "Confectionery",
    "agency": false,
-   "count": 6
+   "count": 4
   },
   {
    "id": "B06",
@@ -106,7 +106,7 @@
    "logo": "assets/logos/natural-100.png",
    "category": "Juices & Beverages",
    "agency": false,
-   "count": 2
+   "count": 1
   },
   {
    "id": "B13",
@@ -115,7 +115,7 @@
    "logo": "assets/logos/red-bull.png",
    "category": "Energy Drinks",
    "agency": false,
-   "count": 2
+   "count": 0
   },
   {
    "id": "B14",
@@ -190,24 +190,6 @@
    "image": "B05_I006_MIKE_AND_IKE_Mega_Mix_Peg_Bag_Sour.png",
    "slug": "mega-mix-peg-bag-sour",
    "file": "assets/products/mike-and-ike-mega-mix-peg-bag-sour-i006.png"
-  },
-  {
-   "id": "B05-I007",
-   "name": "Thrill Ride Mix",
-   "brand": "MIKE AND IKE",
-   "category": "Confectionery",
-   "image": "B05_I007_MIKE_AND_IKE_Thrill_Ride_Mix.png",
-   "slug": "thrill-ride-mix",
-   "file": "assets/products/mike-and-ike-thrill-ride-mix-i007.png"
-  },
-  {
-   "id": "B05-I008",
-   "name": "Ice Cream Truck Mix",
-   "brand": "MIKE AND IKE",
-   "category": "Confectionery",
-   "image": "B05_I008_MIKE_AND_IKE_Ice_Cream_Truck_Mix.png",
-   "slug": "ice-cream-truck-mix",
-   "file": "assets/products/mike-and-ike-ice-cream-truck-mix-i008.png"
   },
   {
    "id": "B05-I009",
@@ -631,33 +613,6 @@
    "image": "B12_I037_Natural_100_Juice_Range_Composite.png",
    "slug": "100-juice-range",
    "file": "assets/products/natural-100-100-juice-range-composite-i037.png"
-  },
-  {
-   "id": "B12-I038",
-   "name": "100% Juice Apple",
-   "brand": "Natural 100%",
-   "category": "Juices & Beverages",
-   "image": "B12_I038_Natural_100_Juice_Apple.png",
-   "slug": "100-juice-apple",
-   "file": "assets/products/natural-100-100-juice-apple-i038.png"
-  },
-  {
-   "id": "B13-I039",
-   "name": "Plus Energy Drink",
-   "brand": "Red Bull",
-   "category": "Energy Drinks",
-   "image": "B13_I039_Red_Bull_Plus_Energy_Drink.png",
-   "slug": "plus-energy-drink",
-   "file": "assets/products/red-bull-plus-energy-drink-i039.png"
-  },
-  {
-   "id": "B13-I040",
-   "name": "High Vitamin Zero Sugar",
-   "brand": "Red Bull",
-   "category": "Energy Drinks",
-   "image": "B13_I040_Red_Bull_High_Vitamin_Zero_Sugar.png",
-   "slug": "high-vitamin-zero-sugar",
-   "file": "assets/products/red-bull-high-vitamin-zero-sugar-i040.png"
   },
   {
    "id": "B14-I041",

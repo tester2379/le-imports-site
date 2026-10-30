@@ -32,7 +32,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
 BRANDS, PRODUCTS = DATA["brands"], DATA["products"]
-CATEGORIES = DATA["categories"]
+# A brand whose products have all been removed (Red Bull, DSM-1283) stays in
+# data.json but gets no logo tile, filter entry or page until it has one again.
+BRANDS = [b for b in BRANDS if any(p["brand"] == b["name"] for p in PRODUCTS)]
+CATEGORIES = [c for c in DATA["categories"] if any(p["category"] == c for p in PRODUCTS)]
 
 WA = ("https://wa.me/35699474578?text=Hello%2C%20I%20would%20like%20to%20request"
       "%20a%20quote%20from%20L%26E%20Imports.")
@@ -272,7 +275,8 @@ def build_products():
     body = (
         '<section class="section"><div class="container"><div class="section-intro">'
         '<p class="eyebrow purple">PRODUCT RANGE</p><h2>Everything we supply,<br>in one place.</h2>'
-        f'<p>{len(PRODUCTS)} products across {len(BRANDS)} brands. Filter by brand or category, '
+        # DSM-1283: the client asked for the products/brands count line to go.
+        '<p>Filter by brand or category, '
         'then send us an enquiry about anything you would like to stock. Trade enquiries only — '
         'this is a distribution catalogue, not an online shop.</p></div>'
         '<div class="filter-bar">'
@@ -281,7 +285,7 @@ def build_products():
         '<label>Category<select id="filterCategory"><option value="">All categories</option>'
         f'{cat_opts}</select></label>'
         '<button class="btn secondary small" id="filterReset" type="button">Reset</button>'
-        f'<span class="filter-count" id="filterCount">{len(PRODUCTS)} products</span></div>'
+        '</div>'
         f'<div class="product-grid" id="productGrid">{cards}</div>'
         '<p class="no-results" id="noResults" hidden>No products match those filters.</p>'
         '</div></section>'
@@ -544,7 +548,7 @@ def build_filter_js():
         '      card.hidden = !ok;\n'
         '      if (ok) shown++;\n'
         '    });\n'
-        '    count.textContent = shown + (shown === 1 ? " product" : " products");\n'
+        '    if (count) count.textContent = shown + (shown === 1 ? " product" : " products");\n'
         '    none.hidden = shown !== 0;\n'
         '  }\n'
         '  brand.addEventListener("change", apply);\n'

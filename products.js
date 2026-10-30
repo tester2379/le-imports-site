@@ -19,7 +19,7 @@
       card.hidden = !ok;
       if (ok) shown++;
     });
-    count.textContent = shown + (shown === 1 ? " product" : " products");
+    if (count) count.textContent = shown + (shown === 1 ? " product" : " products");
     none.hidden = shown !== 0;
   }
   brand.addEventListener("change", apply);

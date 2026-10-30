@@ -312,6 +312,12 @@ def families(items, brand):
     final group so every product is still on the page.
     """
     remaining, groups = list(items), []
+    # DSM-1285: a product may name its family outright ("22g Range") when the
+    # names alone would group it wrongly (Sour Watermelon 22g / 120g).
+    for p in items:
+        if p.get("family") and not any(g[0] == p["family"] for g in groups):
+            groups.append((p["family"], [q for q in items if q.get("family") == p["family"]]))
+    remaining = [p for p in remaining if not p.get("family")]
     while remaining:
         counts = {}
         for p in remaining:

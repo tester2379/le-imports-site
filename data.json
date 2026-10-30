@@ -43,7 +43,7 @@
    "logo": "assets/logos/mike-and-ike.png",
    "category": "Confectionery",
    "agency": false,
-   "count": 4
+   "count": 14
   },
   {
    "id": "B06",
@@ -52,7 +52,7 @@
    "logo": "assets/logos/oylum.jpg",
    "category": "Biscuits & Cakes",
    "agency": true,
-   "count": 9
+   "count": 10
   },
   {
    "id": "B07",
@@ -88,7 +88,7 @@
    "logo": "assets/logos/relax.png",
    "category": "Juices & Beverages",
    "agency": false,
-   "count": 3
+   "count": 5
   },
   {
    "id": "B11",
@@ -106,7 +106,7 @@
    "logo": "assets/logos/natural-100.png",
    "category": "Juices & Beverages",
    "agency": false,
-   "count": 1
+   "count": 4
   },
   {
    "id": "B13",
@@ -124,7 +124,7 @@
    "logo": "assets/logos/warheads.jpg",
    "category": "Confectionery",
    "agency": false,
-   "count": 1
+   "count": 4
   },
   {
    "id": "B15",
@@ -133,7 +133,16 @@
    "logo": "assets/logos/hersheys.png",
    "category": "Chocolate",
    "agency": false,
-   "count": 1
+   "count": 2
+  },
+  {
+   "id": "B16",
+   "name": "Hi-Chew",
+   "slug": "hi-chew",
+   "logo": "assets/logos/hi-chew.jpg",
+   "category": "Confectionery",
+   "agency": false,
+   "count": 4
   }
  ],
  "products": [
@@ -192,31 +201,124 @@
    "file": "assets/products/mike-and-ike-mega-mix-peg-bag-sour-i006.png"
   },
   {
-   "id": "B05-I009",
-   "name": "120g Range",
+   "id": "B05-I061",
+   "name": "Sour Watermelon 22g",
    "brand": "MIKE AND IKE",
    "category": "Confectionery",
-   "image": "B05_I009_MIKE_AND_IKE_120g_Range.png",
-   "slug": "120g-range",
-   "file": "assets/products/mike-and-ike-120g-range-i009.png"
+   "image": "image1.jpg (DSM-1285 brief)",
+   "slug": "sour-watermelon-22g",
+   "file": "assets/products/mike-and-ike-sour-watermelon-22g-i061.jpg",
+   "family": "22g Range"
   },
   {
-   "id": "B05-I010",
-   "name": "22g Range",
+   "id": "B05-I062",
+   "name": "Tropical Typhoon 22g",
    "brand": "MIKE AND IKE",
    "category": "Confectionery",
-   "image": "B05_I010_MIKE_AND_IKE_22g_Range.png",
-   "slug": "22g-range",
-   "file": "assets/products/mike-and-ike-22g-range-i010.png"
+   "image": "image2.jpg (DSM-1285 brief)",
+   "slug": "tropical-typhoon-22g",
+   "file": "assets/products/mike-and-ike-tropical-typhoon-22g-i062.jpg",
+   "family": "22g Range"
   },
   {
-   "id": "B06-I011",
-   "name": "Tiger Cocoa Coated Wafers Range",
-   "brand": "OYLUM",
-   "category": "Biscuits & Cakes",
-   "image": "B06_I011_OYLUM_Tiger_Cocoa_Coated_Wafers_Range.png",
-   "slug": "tiger-cocoa-coated-wafers-range",
-   "file": "assets/products/oylum-tiger-cocoa-coated-wafers-range-i011.png"
+   "id": "B05-I063",
+   "name": "Original Fruits 22g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image3.jpg (DSM-1285 brief)",
+   "slug": "original-fruits-22g",
+   "file": "assets/products/mike-and-ike-original-fruits-22g-i063.jpg",
+   "family": "22g Range"
+  },
+  {
+   "id": "B05-I064",
+   "name": "Cherry 22g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image4.jpg (DSM-1285 brief)",
+   "slug": "cherry-22g",
+   "file": "assets/products/mike-and-ike-cherry-22g-i064.jpg",
+   "family": "22g Range"
+  },
+  {
+   "id": "B05-I065",
+   "name": "Orange 22g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image5.jpg (DSM-1285 brief)",
+   "slug": "orange-22g",
+   "file": "assets/products/mike-and-ike-orange-22g-i065.jpg",
+   "family": "22g Range"
+  },
+  {
+   "id": "B05-I066",
+   "name": "Berry Blast 22g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image6.jpg (DSM-1285 brief)",
+   "slug": "berry-blast-22g",
+   "file": "assets/products/mike-and-ike-berry-blast-22g-i066.jpg",
+   "family": "22g Range"
+  },
+  {
+   "id": "B05-I067",
+   "name": "Red Rageous! 120g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image7.jpg (DSM-1285 brief)",
+   "slug": "red-rageous-120g",
+   "file": "assets/products/mike-and-ike-red-rageous-120g-i067.jpg",
+   "family": "120g Range"
+  },
+  {
+   "id": "B05-I068",
+   "name": "Tropical Typhoon 120g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image8.jpg (DSM-1285 brief)",
+   "slug": "tropical-typhoon-120g",
+   "file": "assets/products/mike-and-ike-tropical-typhoon-120g-i068.jpg",
+   "family": "120g Range"
+  },
+  {
+   "id": "B05-I069",
+   "name": "Sour Watermelon 120g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image9.jpg (DSM-1285 brief)",
+   "slug": "sour-watermelon-120g",
+   "file": "assets/products/mike-and-ike-sour-watermelon-120g-i069.jpg",
+   "family": "120g Range"
+  },
+  {
+   "id": "B05-I070",
+   "name": "Sour Blue Raspberry 120g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image10.jpg (DSM-1285 brief)",
+   "slug": "sour-blue-raspberry-120g",
+   "file": "assets/products/mike-and-ike-sour-blue-raspberry-120g-i070.jpg",
+   "family": "120g Range"
+  },
+  {
+   "id": "B05-I071",
+   "name": "Mega Mix Sour! 120g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image11.jpg (DSM-1285 brief)",
+   "slug": "mega-mix-sour-120g",
+   "file": "assets/products/mike-and-ike-mega-mix-sour-120g-i071.jpg",
+   "family": "120g Range"
+  },
+  {
+   "id": "B05-I072",
+   "name": "Thrill Ride Mix 120g",
+   "brand": "MIKE AND IKE",
+   "category": "Confectionery",
+   "image": "image12.jpg (DSM-1285 brief)",
+   "slug": "thrill-ride-mix-120g",
+   "file": "assets/products/mike-and-ike-thrill-ride-mix-120g-i072.jpg",
+   "family": "120g Range"
   },
   {
    "id": "B06-I012",
@@ -289,6 +391,26 @@
    "image": "B06_I019_OYLUM_Jaguar_Cocoa_Coated_Wafers_Vanilla_Cream.png",
    "slug": "jaguar-cocoa-coated-wafers-vanilla-cream",
    "file": "assets/products/oylum-jaguar-cocoa-coated-wafers-vanilla-cream-i019.png"
+  },
+  {
+   "id": "B06-I077",
+   "name": "Tiger Cocoa Coated Vanilla Cream Wafers",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "image17.jpg (DSM-1285 brief)",
+   "slug": "tiger-cocoa-coated-vanilla-cream-wafers",
+   "file": "assets/products/oylum-tiger-cocoa-coated-vanilla-cream-wafers-i077.jpg",
+   "family": "Tiger Wafer Bars"
+  },
+  {
+   "id": "B06-I078",
+   "name": "Tiger Cocoa Coated Hazelnut Cream Wafers",
+   "brand": "OYLUM",
+   "category": "Biscuits & Cakes",
+   "image": "image18.jpg (DSM-1285 brief)",
+   "slug": "tiger-cocoa-coated-hazelnut-cream-wafers",
+   "file": "assets/products/oylum-tiger-cocoa-coated-hazelnut-cream-wafers-i078.jpg",
+   "family": "Tiger Wafer Bars"
   },
   {
    "id": "B07-I020",
@@ -597,6 +719,24 @@
    "file": "assets/products/relax-ice-tea-range-i035.png"
   },
   {
+   "id": "B10-I083",
+   "name": "Lemon",
+   "brand": "Relax",
+   "category": "Juices & Beverages",
+   "image": "image23.jpg (DSM-1285 brief)",
+   "slug": "relax-lemon",
+   "file": "assets/products/relax-lemon-i083.jpg"
+  },
+  {
+   "id": "B10-I084",
+   "name": "Ice Tea Peach",
+   "brand": "Relax",
+   "category": "Juices & Beverages",
+   "image": "image24.jpg (DSM-1285 brief)",
+   "slug": "relax-ice-tea-peach",
+   "file": "assets/products/relax-ice-tea-peach-i084.jpg"
+  },
+  {
    "id": "B11-I036",
    "name": "Zucchero 1000g",
    "brand": "Geber",
@@ -606,22 +746,76 @@
    "file": "assets/products/geber-zucchero-1000g-i036.png"
   },
   {
-   "id": "B12-I037",
-   "name": "100% Juice Range",
+   "id": "B12-I079",
+   "name": "Apple",
    "brand": "Natural 100%",
    "category": "Juices & Beverages",
-   "image": "B12_I037_Natural_100_Juice_Range_Composite.png",
-   "slug": "100-juice-range",
-   "file": "assets/products/natural-100-100-juice-range-composite-i037.png"
+   "image": "image19.jpg (DSM-1285 brief)",
+   "slug": "natural-100-apple",
+   "file": "assets/products/natural-100-apple-i079.jpg"
   },
   {
-   "id": "B14-I041",
-   "name": "Sour and Chewy Candy Range",
+   "id": "B12-I080",
+   "name": "Grape",
+   "brand": "Natural 100%",
+   "category": "Juices & Beverages",
+   "image": "image20.jpg (DSM-1285 brief)",
+   "slug": "natural-100-grape",
+   "file": "assets/products/natural-100-grape-i080.jpg"
+  },
+  {
+   "id": "B12-I081",
+   "name": "Sour Cherry",
+   "brand": "Natural 100%",
+   "category": "Juices & Beverages",
+   "image": "image21.jpg (DSM-1285 brief)",
+   "slug": "natural-100-sour-cherry",
+   "file": "assets/products/natural-100-sour-cherry-i081.jpg"
+  },
+  {
+   "id": "B12-I082",
+   "name": "Orange",
+   "brand": "Natural 100%",
+   "category": "Juices & Beverages",
+   "image": "image22.jpg (DSM-1285 brief)",
+   "slug": "natural-100-orange",
+   "file": "assets/products/natural-100-orange-i082.jpg"
+  },
+  {
+   "id": "B14-I073",
+   "name": "Wedgies",
    "brand": "Warheads",
    "category": "Confectionery",
-   "image": "B14_I041_Warheads_Sour_and_Chewy_Candy_Range.png",
-   "slug": "sour-and-chewy-candy-range",
-   "file": "assets/products/warheads-sour-and-chewy-candy-range-i041.png"
+   "image": "image13.jpg (DSM-1285 brief)",
+   "slug": "warheads-wedgies",
+   "file": "assets/products/warheads-wedgies-i073.jpg"
+  },
+  {
+   "id": "B14-I074",
+   "name": "Ooze Chews",
+   "brand": "Warheads",
+   "category": "Confectionery",
+   "image": "image14.jpg (DSM-1285 brief)",
+   "slug": "warheads-ooze-chews",
+   "file": "assets/products/warheads-ooze-chews-i074.jpg"
+  },
+  {
+   "id": "B14-I075",
+   "name": "Cubes – Blue Raspberry",
+   "brand": "Warheads",
+   "category": "Confectionery",
+   "image": "image15.jpg (DSM-1285 brief)",
+   "slug": "warheads-cubes-blue-raspberry",
+   "file": "assets/products/warheads-cubes-blue-raspberry-i075.jpg"
+  },
+  {
+   "id": "B14-I076",
+   "name": "Cubes – Sour Sweet Fruity",
+   "brand": "Warheads",
+   "category": "Confectionery",
+   "image": "image16.jpg (DSM-1285 brief)",
+   "slug": "warheads-cubes-sour-sweet-fruity",
+   "file": "assets/products/warheads-cubes-sour-sweet-fruity-i076.jpg"
   },
   {
    "id": "B15-I042",
@@ -631,6 +825,51 @@
    "image": "B15_I042_Hersheys_Milk_Duds.png",
    "slug": "milk-duds",
    "file": "assets/products/hersheys-milk-duds-i042.png"
+  },
+  {
+   "id": "B15-I089",
+   "name": "Jolly Rancher Sour Gummies Original 99g",
+   "brand": "Hershey's",
+   "category": "Confectionery",
+   "image": "image29.jpg (DSM-1285 brief)",
+   "slug": "jolly-rancher-sour-gummies-original-99g",
+   "file": "assets/products/hersheys-jolly-rancher-sour-gummies-original-99g-i089.jpg"
+  },
+  {
+   "id": "B16-I085",
+   "name": "Green Apple",
+   "brand": "Hi-Chew",
+   "category": "Confectionery",
+   "image": "image25.jpg (DSM-1285 brief)",
+   "slug": "hi-chew-green-apple",
+   "file": "assets/products/hi-chew-green-apple-i085.jpg"
+  },
+  {
+   "id": "B16-I086",
+   "name": "Grape",
+   "brand": "Hi-Chew",
+   "category": "Confectionery",
+   "image": "image26.jpg (DSM-1285 brief)",
+   "slug": "hi-chew-grape",
+   "file": "assets/products/hi-chew-grape-i086.jpg"
+  },
+  {
+   "id": "B16-I087",
+   "name": "Strawberry",
+   "brand": "Hi-Chew",
+   "category": "Confectionery",
+   "image": "image27.jpg (DSM-1285 brief)",
+   "slug": "hi-chew-strawberry",
+   "file": "assets/products/hi-chew-strawberry-i087.jpg"
+  },
+  {
+   "id": "B16-I088",
+   "name": "Mango",
+   "brand": "Hi-Chew",
+   "category": "Confectionery",
+   "image": "image28.jpg (DSM-1285 brief)",
+   "slug": "hi-chew-mango",
+   "file": "assets/products/hi-chew-mango-i088.jpg"
   }
  ],
  "categories": [

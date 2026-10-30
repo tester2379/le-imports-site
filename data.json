@@ -88,7 +88,7 @@
    "logo": "assets/logos/relax.png",
    "category": "Juices & Beverages",
    "agency": false,
-   "count": 5
+   "count": 4
   },
   {
    "id": "B11",
@@ -139,7 +139,7 @@
    "id": "B16",
    "name": "Hi-Chew",
    "slug": "hi-chew",
-   "logo": "assets/logos/hi-chew.jpg",
+   "logo": "assets/logos/hi-chew.png",
    "category": "Confectionery",
    "agency": false,
    "count": 4
@@ -708,15 +708,6 @@
    "image": "B10_I034_Relax_Juice_1_5L_Range.png",
    "slug": "juice-1-5l-range",
    "file": "assets/products/relax-juice-1-5l-range-i034.png"
-  },
-  {
-   "id": "B10-I035",
-   "name": "Ice Tea Range",
-   "brand": "Relax",
-   "category": "Juices & Beverages",
-   "image": "B10_I035_Relax_Ice_Tea_Range.png",
-   "slug": "ice-tea-range",
-   "file": "assets/products/relax-ice-tea-range-i035.png"
   },
   {
    "id": "B10-I083",

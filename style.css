@@ -107,4 +107,4 @@
    when narrow screens crop the band. */
 .hero,.page-hero{background-position:right 30%}
 /* On phones the heading sits on top of the pack, so tint the whole band. */
-@media(max-width:700px){.hero,.page-hero{background-image:linear-gradient(rgba(41,38,95,.78),rgba(41,38,95,.78)),url(assets/hero/le-hero.jpg)!important}}
+@media(max-width:700px){.hero,.page-hero{background-image:linear-gradient(rgba(41,38,95,.78),rgba(41,38,95,.78)),url(assets/hero/le-hero.jpg)!important}}.image-frame.feature{min-height:0;aspect-ratio:3/2;border-radius:6px;box-shadow:0 18px 40px #29265f22}.image-frame.feature img{display:block;min-height:0;height:100%;object-fit:cover}@media(max-width:560px){.image-frame.feature,.image-frame.feature img{min-height:0}}

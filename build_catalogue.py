@@ -45,8 +45,10 @@ HERO = "assets/hero/le-hero.jpg"
 # Tint only the left side so the pack on the right stays visible.
 HERO_TINT = ("linear-gradient(90deg,rgba(41,38,95,.85) 0%,rgba(41,38,95,.55) 40%,"
              "rgba(41,38,95,0) 72%)")
-WAREHOUSE = ("https://images.unsplash.com/photo-1553413077-190dd305871c"
-             "?auto=format&fit=crop&w=1200&q=85")
+# DSM-1287: client product shots in the About / Distribution body (not the hero).
+# 3:2 artwork shown whole in a 3:2 frame, so nothing is cropped.
+ABOUT_IMG = "assets/feature/warheads-wedgies.jpg"
+DISTRIBUTION_IMG = "assets/feature/reeses-oreo.jpg"
 
 # The web font, lifted out of style.css so the cookie notice can gate it: it is
 # emitted as data-consent-href, and cookie-notice.js only turns that into a real
@@ -137,7 +139,7 @@ def page(title, active, body, hero_title=None, hero_text=None, desc=None, up="")
         # the tab icon: without these every page falls back to a 404 on
         # /favicon.ico, which on GitHub Pages is not even under this site
         f'<link rel="icon" href="{up}favicon.png" type="image/png">'
-        f'<link rel="stylesheet" href="{up}style.css?v=1286b">'
+        f'<link rel="stylesheet" href="{up}style.css?v=1287">'
         f'<link rel="stylesheet" href="{up}cookie-notice.css">'
         # Google Fonts held back until the visitor accepts. It used to be an
         # @import inside style.css, which loaded it for everyone the moment the
@@ -435,8 +437,9 @@ def build_about():
         '<p>Our role is straightforward: make quality imported products available to the '
         'businesses that sell them every day, with reliable supply and a direct line to our team.</p>'
         f'<a class="btn primary" href="{WA}" target="_blank" rel="noopener">Request a Quote ↗</a>'
-        '</div><div class="image-frame">'
-        f'<img src="{WAREHOUSE}" alt="Food distribution warehouse shelving"></div></div></section>'
+        '</div><div class="image-frame feature">'
+        f'<img src="{ABOUT_IMG}" alt="Warheads Wedgies sour gummies" width="1536" height="1024">'
+        '</div></div></section>'
         '<section class="section offwhite"><div class="container">'
         '<div class="section-intro left"><p class="eyebrow purple">OUR APPROACH</p>'
         '<h2>Professional supply,<br>without the unnecessary noise.</h2>'
@@ -485,8 +488,9 @@ def build_distribution():
         '<p>Browse the <a href="brands.html">brands we distribute</a> or the full '
         '<a href="products.html">product range</a>, then talk to us about supply.</p>'
         f'<a class="btn primary" href="{WA}" target="_blank" rel="noopener">Request a Quote ↗</a>'
-        '</div><div class="image-frame">'
-        f'<img src="{WAREHOUSE}" alt="Warehouse distribution shelving"></div></div></section>'
+        '</div><div class="image-frame feature">'
+        f'<img src="{DISTRIBUTION_IMG}" alt="Reese&#8217;s Oreo peanut butter cups" width="1536" height="1024">'
+        '</div></div></section>'
         '<section class="section offwhite"><div class="container">'
         '<div class="section-intro left"><p class="eyebrow purple">WHAT WE DO</p>'
         '<h2>Focused on the business<br>behind the order.</h2></div>'

@@ -159,8 +159,7 @@ def products_of(brand_name):
 def logo_tile(b, up=""):
     return (f'<a class="logo-tile" href="{up}brands/{b["slug"]}/">'
             f'<img src="{up}{b["logo"]}" alt="{e(b["name"])} logo" loading="lazy">'
-            f'<span class="logo-name">{e(b["name"])}</span>'
-            f'<small>{b["count"]} product{"s" if b["count"] != 1 else ""}</small></a>')
+            f'<span class="logo-name">{e(b["name"])}</span></a>')
 
 
 def product_card(p, up=""):
@@ -360,8 +359,7 @@ def build_brand_pages():
             '<section class="section"><div class="container brand-head">'
             f'<div class="brand-logo-frame"><img src="../../{b["logo"]}" alt="{e(b["name"])} logo"></div>'
             f'<div><p class="eyebrow purple">BRAND</p><h1>{e(b["name"])}</h1>{agency_note}'
-            f'<p>L&amp;E Imports supplies {len(items)} '
-            f'{"product" if len(items) == 1 else "products"} from {e(b["name"])} to '
+            f'<p>L&amp;E Imports supplies {e(b["name"])} products to '
             'supermarkets, convenience stores and retailers across Malta.</p>'
             f'<a class="btn primary" href="{wa_link(b["name"])}" target="_blank" rel="noopener">'
             f'Interested in stocking {e(b["name"])}? ↗</a></div></div></section>'

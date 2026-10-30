@@ -205,9 +205,10 @@ def build_home():
         f'<a class="btn primary" href="{WA}" target="_blank" rel="noopener">Request a Quote ↗</a>'
         '</div></div></section>'
         '<section class="trust-strip"><div class="container trust-grid">'
-        f'<span><b>{len(BRANDS)}</b> brands distributed</span>'
-        f'<span><b>{len(PRODUCTS)}</b> products supplied</span>'
-        '<span><b>2</b> official agency lines</span>'
+        # DSM-1288: client wants no brand/product numbers on the Home page
+        '<span><b>Global</b> brands, local supply</span>'
+        '<span><b>Island-wide</b> distribution</span>'
+        '<span><b>Official</b> OYLUM &amp; Vitaminka agent</span>'
         '<span><b>B2B</b> retail &amp; trade supply</span></div></section>'
         '<section class="section"><div class="container"><div class="split-head">'
         '<div><p class="eyebrow purple">OUR BRANDS</p><h2>The brands we<br>bring to Malta.</h2></div>'

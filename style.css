@@ -103,3 +103,8 @@
   .filter-bar select{min-width:0;width:100%}
   .filter-bar label{flex:1 1 100%}
 }
+/* DSM-1286: hero artwork keeps its product pack on the right, so anchor it there
+   when narrow screens crop the band. */
+.hero,.page-hero{background-position:right 30%}
+/* On phones the heading sits on top of the pack, so tint the whole band. */
+@media(max-width:700px){.hero,.page-hero{background-image:linear-gradient(rgba(41,38,95,.78),rgba(41,38,95,.78)),url(assets/hero/le-hero.jpg)!important}}

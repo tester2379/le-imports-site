@@ -39,8 +39,12 @@ CATEGORIES = [c for c in DATA["categories"] if any(p["category"] == c for p in P
 
 WA = ("https://wa.me/35699474578?text=Hello%2C%20I%20would%20like%20to%20request"
       "%20a%20quote%20from%20L%26E%20Imports.")
-HERO = ("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
-        "?auto=format&fit=crop&w=1800&q=85")
+# Hero band image on every page that has one (DSM-1286: client-supplied artwork,
+# dark on the left for the heading, product pack on the right). Relative path.
+HERO = "assets/hero/le-hero.jpg"
+# Tint only the left side so the pack on the right stays visible.
+HERO_TINT = ("linear-gradient(90deg,rgba(41,38,95,.85) 0%,rgba(41,38,95,.55) 40%,"
+             "rgba(41,38,95,0) 72%)")
 WAREHOUSE = ("https://images.unsplash.com/photo-1553413077-190dd305871c"
              "?auto=format&fit=crop&w=1200&q=85")
 
@@ -120,8 +124,7 @@ def page(title, active, body, hero_title=None, hero_text=None, desc=None, up="")
     now so that can't happen again."""
     hero = ""
     if hero_title:
-        hero = ('<section class="page-hero" style="background-image:linear-gradient('
-                f'90deg,rgba(41,38,95,.88),rgba(41,38,95,.38)),url({HERO})"><div class="container">'
+        hero = (f'<section class="page-hero" style="background-image:{HERO_TINT},url({up}{HERO})"><div class="container">'
                 '<p class="eyebrow">L&amp;E IMPORTS</p>'
                 f'<h1>{e(hero_title)}</h1>'
                 + (f"<p>{e(hero_text)}</p>" if hero_text else "") + '</div></section>')
@@ -134,7 +137,7 @@ def page(title, active, body, hero_title=None, hero_text=None, desc=None, up="")
         # the tab icon: without these every page falls back to a 404 on
         # /favicon.ico, which on GitHub Pages is not even under this site
         f'<link rel="icon" href="{up}favicon.png" type="image/png">'
-        f'<link rel="stylesheet" href="{up}style.css">'
+        f'<link rel="stylesheet" href="{up}style.css?v=1286b">'
         f'<link rel="stylesheet" href="{up}cookie-notice.css">'
         # Google Fonts held back until the visitor accepts. It used to be an
         # @import inside style.css, which loaded it for everyone the moment the
@@ -191,8 +194,7 @@ def build_home():
             ("03", "Retailers", "A broad portfolio across confectionery, snacks, biscuits and drinks."),
             ("04", "Commercial customers", "Dependable supply for businesses across Malta.")])
     body = (
-        f'<section class="hero" style="background-image:linear-gradient(90deg,'
-        f'rgba(41,38,95,.9),rgba(41,38,95,.35)),url({HERO})"><div class="container hero-content">'
+        f'<section class="hero" style="background-image:{HERO_TINT},url({HERO})"><div class="container hero-content">'
         '<p class="eyebrow">B2B FOOD IMPORTING &amp; DISTRIBUTION</p>'
         '<h1>Quality Products.<br><em>Reliable Distribution.</em></h1>'
         '<p class="lead">L&amp;E Imports imports and distributes food, confectionery, snacks '

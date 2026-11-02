@@ -570,6 +570,31 @@ def build_filter_js():
         '})();\n', encoding="utf-8")
 
 
+# DSM-1298: the site's own domain. GitHub Pages serves it there once the DNS at
+# Hostinger points at GitHub; CNAME is the file Pages reads for that.
+SITE_URL = "https://leimports.com/"
+
+
+def build_seo_files():
+    """robots.txt + sitemap.xml for leimports.com. Only current brands/products
+    are listed, so a product removed from data.json drops out of the sitemap even
+    if its old folder is still on disk."""
+    urls = [SITE_URL] + [SITE_URL + f for f in
+                         ("about.html", "brands.html", "products.html",
+                          "distribution.html", "contact.html", "privacy.html")]
+    urls += [f"{SITE_URL}brands/{b['slug']}/" for b in BRANDS]
+    urls += [f"{SITE_URL}products/{p['slug']}/" for p in PRODUCTS]
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{html.escape(u)}</loc></url>\n" for u in urls)
+        + "</urlset>\n", encoding="utf-8")
+    (ROOT / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
+    (ROOT / "CNAME").write_text("leimports.com\n", encoding="utf-8")
+    return len(urls)
+
+
 if __name__ == "__main__":
     build_home()
     build_about()
@@ -580,6 +605,7 @@ if __name__ == "__main__":
     build_distribution()
     build_contact()
     build_filter_js()
+    print(f"sitemap {build_seo_files()} URLs")
     pages = len(list(ROOT.rglob("index.html"))) + len(list(ROOT.glob("*.html")))
     print(f"brands {len(BRANDS)} · products {len(PRODUCTS)} · categories {len(CATEGORIES)}")
     print(f"generated {len(BRANDS)} brand pages + {len(PRODUCTS)} product pages + 6 top-level pages")
